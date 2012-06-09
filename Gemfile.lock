@@ -22,5 +22,6 @@ PLATFORMS
 
 DEPENDENCIES
   json
+  rack
   sinatra
   thin
