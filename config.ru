@@ -1,2 +1,2 @@
-require_relative 'web'
+require 'web'
 run Sinatra::Application
