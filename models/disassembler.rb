@@ -4,9 +4,7 @@ class Disassembler
     out = StringIO.new
     $stderr = out
     begin
-      diss = RubyVM::InstructionSequence.compile(src).disassemble
-      puts diss
-      diss
+      RubyVM::InstructionSequence.compile(src).disassemble
     rescue Exception => e
       out.string
     end
