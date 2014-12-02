@@ -1,32 +1,34 @@
 <div class="banner">
-Rubybytes
+  Rubybytes
 </div>
 
 <div id="container">
 
-<div class="intro">
-Welcome to Rubybytes, a disassembler for your ruby code.  Inspired by a project by Matt Godbold called <a href="https://github.com/mattgodbolt/gcc-explorer">GCC Explorer</a> and aimed at Ruby from a suggestion by <a href="http://patshaughnessy.net/">Pat Shaughnessy</a>.
-<div class="messages" >
-
-</div>
-
-<div class="action">
-</div>
-<div id="main">
-  <div class="console-container">
-    Ruby Code
-    <div class="console">
-      <textarea id="inputTextArea">puts 'hi'</textarea>
-    </div>
-    <a id="disassemble_button" href="#" class="btn" onClick="javabytes.submitCode(); return false;">Disassemble</a>
+  <div class="intro">
+    Welcome to Rubybytes, a disassembler for your ruby code.  Inspired by a project by Matt Godbold called <a href="https://github.com/mattgodbolt/gcc-explorer">GCC Explorer</a> and aimed at Ruby from a suggestion by <a href="http://patshaughnessy.net/">Pat Shaughnessy</a>.
   </div>
-  <div class="console-container">
-    Disassembled Code
-    <div class="console">
-      <textarea id="outputTextArea"></textarea>
+
+  <div class="messages" >
+  </div>
+
+  <div class="action">
+  </div>
+
+  <div id="main">
+    <div class="console-container">
+      Ruby Code
+      <div class="console">
+        <textarea id="inputTextArea">puts 'hi'</textarea>
+      </div>
+      <a id="disassemble_button" href="#" class="btn" onClick="codebytes.submitCode(); return false;">Disassemble</a>
+    </div>
+    <div class="console-container">
+      Disassembled Code
+      <div class="console">
+        <textarea id="outputTextArea"></textarea>
+      </div>
     </div>
   </div>
-</div>
 
 </div>
 

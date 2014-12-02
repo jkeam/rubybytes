@@ -8,8 +8,14 @@ get '/' do
 end
 
 post '/?' do
-  json = JSON.parse(request.body.read)
-  code = json['code']
-  @diss = Disassembler.disassemble(code)
+  begin
+    json = JSON.parse request.body.read 
+    code = json['code']
+    @diss = Disassembler.disassemble code
+  rescue => e
+    logger.error "Error encountered while trying to dissassemble code"
+    logger.error e
+    @diss = e.message
+  end
   erb :diss, :layout => false
 end
