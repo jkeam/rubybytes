@@ -1,9 +1,7 @@
 Rubybytes
 =====================================
 
-[![Build Status](https://travis-ci.org/jkeam/rubybytes.svg?branch=master)](https://travis-ci.org/jkeam/rubybytes)
-
-[![Coverage Status](https://coveralls.io/repos/github/jkeam/rubybytes/badge.svg?branch=master)](https://coveralls.io/github/jkeam/rubybytes?branch=master)
+[![Build Status](https://travis-ci.org/jkeam/rubybytes.svg?branch=master)](https://travis-ci.org/jkeam/rubybytes) [![Coverage Status](https://coveralls.io/repos/github/jkeam/rubybytes/badge.svg?branch=master)](https://coveralls.io/github/jkeam/rubybytes?branch=master)
 
 Welcome to Rubybytes, a disassembler for your ruby code. Inspired by a project by Matt Godbold called [GCC Explorer](https://github.com/mattgodbolt/gcc-explorer) and aimed at Ruby from a suggestion by [Pat Shaughnessy](http://patshaughnessy.net/).
 
