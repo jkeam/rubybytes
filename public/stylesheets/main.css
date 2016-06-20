@@ -70,6 +70,7 @@ a.btn{
   background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
   background-repeat: repeat-x;
   border: 1px solid #cccccc;
+  border-color: rgb(138, 180, 202) rgb(138, 180, 202) rgb(115, 150, 168);
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
   border-bottom-color: #b3b3b3;
@@ -78,9 +79,6 @@ a.btn{
           border-radius: 4px;
   filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
-  -webkit-box-shadow: inset 0 1px 0 rgb(173, 211, 230), 0 1px 2px rgb(145, 190, 213);
-     -moz-box-shadow: inset 0 1px 0 rgb(173, 211, 230), 0 1px 2px rgb(145, 190, 213);
-          box-shadow: inset 0 1px 0 rgb(173, 211, 230), 0 1px 2px rgb(145, 190, 213);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -115,13 +113,9 @@ a.btn{
 
 .btn:active,
 .btn.active {
-  background-color: #e6e6e6;
   background-color: #d9d9d9;
   background-image: none;
   outline: 0;
-  -webkit-box-shadow: inset 0 2px 4px rgb(130, 170, 190), 0 1px 2px rgb(145, 190, 213);
-     -moz-box-shadow: inset 0 2px 4px rgb(130, 170, 190), 0 1px 2px rgb(145, 190, 213);
-          box-shadow: inset 0 2px 4px rgb(130, 170, 190), 0 1px 2px rgb(145, 190, 213);
   -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
