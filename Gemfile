@@ -4,6 +4,7 @@ gem 'sinatra'
 gem 'puma'
 gem 'json'
 gem 'rake'
+gem 'coveralls', require: false
 
 group :test do
   gem 'rack-test'
