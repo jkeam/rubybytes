@@ -1,6 +1,9 @@
 require "minitest/autorun"
 require_relative 'spec_helper.rb'
 
+require 'coveralls'
+Coveralls.wear!
+
 describe "my example spec" do  
   it "should successfully return the main index page" do
     get '/'

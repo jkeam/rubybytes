@@ -1,0 +1,7 @@
+exclude_paths:
+- "spec"
+- "coverage"
+- "public/javascripts/codemirror-4.8"
+- "public/stylesheets/codemirror-4.8"
+- "public/stylesheets/bootstrap.min.css"
+- "public/stylesheets/bootswatch.min.css"
