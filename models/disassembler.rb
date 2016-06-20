@@ -5,7 +5,8 @@ class Disassembler
     $stderr = out
     begin
       RubyVM::InstructionSequence.compile(src).disassemble
-    rescue Exception => e
+    rescue StandardError => e
+      puts e.message
       out.string
     end
   end
