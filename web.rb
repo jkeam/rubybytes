@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'sinatra'
 require 'json'
 require_relative 'models/disassembler'

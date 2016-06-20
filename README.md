@@ -7,3 +7,10 @@ Currently only targets [MRI 2.3.1](https://www.ruby-lang.org/en/news/2016/04/26/
 
 The demo site can be found [here](http://rubybytes.io/).
 
+## Development
+
+### Running Locally
+`heroku local`
+
+### Running Tests
+`rake test`
