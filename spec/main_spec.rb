@@ -1,4 +1,4 @@
-require "minitest/autorun"
+require 'minitest/autorun'
 require_relative 'spec_helper.rb'
 
 require 'coveralls'

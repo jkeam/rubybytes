@@ -6,6 +6,7 @@ gem 'json'
 gem 'rake'
 gem 'coveralls', require: false
 gem 'faraday'
+gem 'dotenv'
 
 group :test do
   gem 'rack-test'
@@ -13,6 +14,5 @@ group :test do
 end
 
 group :development, :test do
-  gem 'dotenv'
   gem 'pry'
 end

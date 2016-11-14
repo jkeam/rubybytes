@@ -1,6 +1,3 @@
-require 'dotenv'
-Dotenv.load
-
 require 'sinatra'
 require 'json'
 require_relative 'models/disassembler_service'
