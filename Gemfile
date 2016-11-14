@@ -5,8 +5,14 @@ gem 'puma'
 gem 'json'
 gem 'rake'
 gem 'coveralls', require: false
+gem 'faraday'
 
 group :test do
   gem 'rack-test'
-  gem 'minitest'  
+  gem 'minitest'
+end
+
+group :development, :test do
+  gem 'dotenv'
+  gem 'pry'
 end

@@ -7,8 +7,13 @@ function Codebytes() {
     outputMirror.setValue("Running...");
 
     var rawText = inputMirror.getValue();
-    if (!rawText) return;
-    var jsonText = JSON.stringify({"code":rawText});
+    var version = $('#rubyVersion').val();
+    if (!rawText || !version) {
+      outputMirror.setValue("Please make sure code and version are not blank.");
+      return;
+    }
+
+    var jsonText = JSON.stringify({"code":rawText, "version":version});
     $.ajax({
       type: 'POST',
       url: '/',
@@ -27,7 +32,7 @@ function Codebytes() {
       }
     });
   };
- 
+
   this.onReady= function() {
     inputMirror = CodeMirror.fromTextArea($("#inputTextArea").get(0), {lineNumbers:true});
     outputMirror = CodeMirror.fromTextArea($("#outputTextArea").get(0), {lineNumbers:true, readOnly :true});
