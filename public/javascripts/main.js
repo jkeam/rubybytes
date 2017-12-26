@@ -7,13 +7,10 @@ function Codebytes() {
     outputMirror.setValue("Running...");
 
     var rawText = inputMirror.getValue();
-    var version = $('#rubyVersion').val();
-    if (!rawText || !version) {
-      outputMirror.setValue("Please make sure code and version are not blank.");
-      return;
-    }
 
-    var jsonText = JSON.stringify({"code":rawText, "version":version});
+    if (!rawText) return;
+    var jsonText = JSON.stringify({"code":rawText});
+
     $.ajax({
       type: 'POST',
       url: '/',
@@ -28,7 +25,7 @@ function Codebytes() {
         outputMirror.setValue(code);
       },
       error: function(xhr, status, errorThrown) {
-        console.error('Error compiling')
+        console.error('Error compiling');
       }
     });
   };

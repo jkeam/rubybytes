@@ -13,7 +13,7 @@ describe "my example spec" do
   it "should be able to post some code to disassemble" do
     code = "puts 'hi'"
     version = "ruby_21"
-    post('/', "{\"code\": \"#{code}\", \"version\": \"#{version}\"}", { "CONTENT_TYPE" => "application/json" })
+    post('/', "{\"code\": \"#{code}\"}", { "CONTENT_TYPE" => "application/json" })
     last_response.body.must_include 'disasm'
   end
 end
